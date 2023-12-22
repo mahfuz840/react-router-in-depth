@@ -27,21 +27,136 @@ button {
 }
 
 /* navbar */
+header nav {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
 
+header nav h1 {
+  margin-right: auto;
+  border-bottom: 3px solid var(--primary);
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+header nav a.active {
+  background: var(--primary);
+}
 
 /* page content */
 
 
 /* help layout */
+.help-layout nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px;
+  margin-top: 30px;
+}
 
+.help-layout a {
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  min-width: 80px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.help-layout a:hover, .help-layout a.active {
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+}
 
 /* faq */
+.faq .question {
+  background-color: #20273b;
+  padding: 5px 15px;
+  margin: 15px 0px;
+  border-radius: 5px;
+}
 
+/* contact */
+.contact {
+  margin-top: 30px;
+}
+
+form {
+  margin-top: 15px;
+}
+
+form label span, form input, form textarea {
+  display: block;
+}
+
+form input, form textarea {
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 0;
+  width: 300px;
+  color: var(--secondary);
+}
+
+form label span {
+  margin-bottom: 10px;
+}
 
 /* careers list */
-
+.careers > a {
+  display: block;
+  background: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-decoration: none;
+}
+.careers > a:hover p {
+  color: var(--primary);
+}
+.careers p {
+  margin: 0;
+}
+.careers > a p:last-child {
+ font-size: 0.8em;
+ color: #bbb;
+}
 
 /* careers details */
-
+.career-details {
+  background-color: #20273b;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
 
 /* breadcrumbs */
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px 0px;
+}
+
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.breadcrumbs .crumb:after {
+  content: '>';
+  margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+
+.breadcrumbs .crumb a {
+  color: #ddd;
+}
